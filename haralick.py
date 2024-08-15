@@ -145,9 +145,9 @@ def hara_loss(x, y):
 def main():   
     #image1 = torch.rand(64,64)
     #image2 = torch.rand(64,64)
-    image1 = np.load('/home/wjy/zxm/SAED_CNN/npy_img/L506_0_input.npy')
+    image1 = np.load('')
     img1 = image1[150:200 ,150:200]
-    image2 = np.load('/home/wjy/zxm/SAED_CNN/npy_img/L506_0_target.npy')
+    image2 = np.load('')
     img2 = image2[150:200 ,150:200]
     #print('image')
     #h = haralick_features(img)
