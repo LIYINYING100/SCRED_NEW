@@ -232,14 +232,13 @@ class Solver(object):
                                                      F.softmax(Variable(pred4 / self.T), dim=1)
                                                      ) * self.T * self.T
                     loss = (1-self.alpha) * ce_loss + kl_loss * self.alpha
-                    self.models[0].zero_grad()  # 梯度清零
+                    self.models[0].zero_grad() 
                     self.models[1].zero_grad()
                     self.optimizers[0].zero_grad()
                     self.optimizers[1].zero_grad()
-# 读模型读错了？
-# 训练问题，权值
-                    loss.backward()  # 反向传播求梯度
-                    self.optimizers[0].step()  # 更新权重参数
+
+                    loss.backward()  
+                    self.optimizers[0].step() 
                     self.optimizers[1].step()
                     train_losses.append(loss.item())
 
@@ -272,7 +271,7 @@ class Solver(object):
         #ori_psnr_avg, ori_ssim_avg, ori_rmse_avg = np.zeros(343), np.zeros(343), np.zeros(343)
         #pred_psnr_avg, pred_ssim_avg, pred_rmse_avg = np.zeros(343), np.zeros(343), np.zeros(343)
         ori_psnr_avg, ori_ssim_avg, ori_rmse_avg = np.zeros(211), np.zeros(211), np.zeros(211)
-        pred_psnr_avg, pred_ssim_avg, pred_rmse_avg = np.zeros(211), np.zeros(211), np.zeros(211)  # 建立一个空数组
+        pred_psnr_avg, pred_ssim_avg, pred_rmse_avg = np.zeros(211), np.zeros(211), np.zeros(211)  
 
         with torch.no_grad():
             for i, (x, y) in enumerate(self.data_loader):
