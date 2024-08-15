@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 from os import path
 import torch
 
-# dcm=pydicom.dcmread("E:\zxm\AAPM-Mayo\L067_4L_100kv_fulldose.1.00001.dcm")
+# dcm=pydicom.dcmread("")
 # print(dcm)
 #
-# image = np.load(rb"E:\zxm\ME\SAED_CNN\data\L067_0001_input.npy")
+# image = np.load(rb"")
 # print(type(image))
 # plt.imshow(image)
 # plt.show()
@@ -17,7 +17,7 @@ import torch
 # print(image.shape)
 #
 
-loss_data = np.load("/home/lhl/ct/ME/KD-online/save_mutual1/SAED/loss_1000_iter.npy")
+loss_data = np.load("")
 print(loss_data)
 
 #def scaner_file(url):
@@ -33,9 +33,9 @@ print(loss_data)
 
 #scaner_file('/home/lhl/ct/ME/KD-offline/data')
 '''
-SAED_TL = np.load('/home/wjy/zxm/SAED_CNN/cocatenate-best/net2/textureloss4-best/MSE_loss_1000_iter.npy')#('/home/wjy/zxm/SAED_CNN/save/loss_1000_iter.npy')
-SAED_MSE = np.load('/home/wjy/zxm/SAED_CNN/cocatenate-best/net1/coca_nosa1-better/loss_1000_iter.npy')
-RED_MSE = np.load('/home/wjy/zxm/RED_CNN/net1/save_lr1e-4_adam-default/loss_1000_iter.npy')
+SAED_TL = np.load('')
+SAED_MSE = np.load('')
+RED_MSE = np.load('')
 
 x1 = SAED_TL
 x2 = SAED_MSE
