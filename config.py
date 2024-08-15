@@ -12,8 +12,8 @@ def add_argument_group(name):
 # data params
 data_arg = add_argument_group('Data Params')
 data_arg.add_argument('--data_path', type=str, default='./AAPM-Mayo-CT-Challenge/')
-data_arg.add_argument('--saved_path', type=str,default='/home/lhl/ct/dataset/npy_1024_3072_full') # /home/lhl/ct/ME/data/L506   /home/lhl/ct/ME/KD-online/data
-data_arg.add_argument('--saved_path1', type=str,default='/home/lhl/ct/dataset/SART') # /home/lhl/ct/ME/data/L506   /home/lhl/ct/ME/KD-online/data
+data_arg.add_argument('--saved_path', type=str,default='') 
+data_arg.add_argument('--saved_path1', type=str,default='') 
 data_arg.add_argument('--transform', type=bool, default=False)
 data_arg.add_argument('--patch_n', type=int, default=9,
                       help='if patch training, batch size is (--patch_n * --batch_size')
