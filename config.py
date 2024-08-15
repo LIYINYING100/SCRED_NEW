@@ -66,7 +66,7 @@ misc_arg.add_argument('--logs_dir', type=str, default='logs',
 misc_arg.add_argument('--use_tensorboard', type=bool, default=True,
                       help='Whether to use tensorboard for visualization')
 misc_arg.add_argument('--resume', type=bool, default=False,
-                      help='Whether to resume training from checkpoint')  # 从checkpoint重新开始训练  .ckpt文件
+                      help='Whether to resume training from checkpoint') 
 misc_arg.add_argument('--ckpt_path', type=str, default='ckpt',
                       help='Directory in which to save model checkpoints')
 def get_config():
