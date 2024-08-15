@@ -31,7 +31,7 @@ print(loss_data)
 #        print(real_url_npy.shape)
 #        print(i)
 
-#scaner_file('/home/lhl/ct/ME/KD-offline/data')
+#scaner_file('')
 '''
 SAED_TL = np.load('')
 SAED_MSE = np.load('')
